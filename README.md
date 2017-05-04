@@ -1,7 +1,5 @@
 # ITI_MOOC
-* [Ruby on Rails](http://rubyonrails.org/)  Project at   [ITI](http://iti.gov.eg/)
-
-* [ITI](http://iti.gov.eg/) - 9 Months Diploma in Open Source Applications Development
+* [Ruby on Rails](http://rubyonrails.org/)  Project at   [ITI](http://iti.gov.eg/) -9 Months Diploma in Open Source Applications Development
 
 ## Description
 MOOC website similar to Coursera, user can create a course with multiple lectures, and other users can
