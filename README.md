@@ -5,7 +5,21 @@
 MOOC website similar to Coursera, user can create a course with multiple lectures, and other users can
 view this course and its lectures.
 
-![Alt text](/screenshots/reg.png?raw=true "Optional Title")
+## Screen Shots
+Registration
+![Registration](/screenshots/reg.png?raw=true "Regstration")
+
+Login
+![Login](/screenshots/login.png?raw=true "Optional Title")
+
+Courses
+![Courses](/screenshots/courses.png?raw=true "Optional Title")
+
+Show Course
+![Show Course](/screenshots/showcourse.png?raw=true "Optional Title")
+
+Admin
+![Admin](/screenshots/Admin.png?raw=true "Admin")
 
 ## Built With
 * [Ruby on Rails](http://guides.rubyonrails.org/v4.2/) - The web framework used
