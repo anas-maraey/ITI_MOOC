@@ -21,15 +21,16 @@
 </p>
 
 
-<%= link_to like_lecture_path(@lecture), method: :put do %>
-    Upvote
+<%= link_to like_lecture_path(@lecture), method: :put, class: "glyphicon glyphicon-thumbs-up" do %>
     <%= @lecture.get_upvotes.size %>
 <% end %>
 
-<%= link_to dislike_lecture_path(@lecture), method: :put do %>
-    Downvote
+|
+
+<%= link_to dislike_lecture_path(@lecture), method: :put, class: "glyphicon glyphicon-thumbs-down" do %>
     <%= @lecture.get_downvotes.size %>
 <% end %>
+|
 <%= link_to 'Edit', edit_lecture_path(@lecture) %> |
 <%= link_to 'Back', lectures_path %>
 <div id="comments">

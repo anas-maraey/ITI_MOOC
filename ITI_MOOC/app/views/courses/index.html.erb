@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Courses</h1>
+<h1>All Courses</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Title</th>
@@ -11,7 +11,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="table-hover">
     <% @courses.each do |course| %>
       <tr>
         <td><%= course.title %></td>
