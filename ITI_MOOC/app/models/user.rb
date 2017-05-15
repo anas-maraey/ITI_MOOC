@@ -7,5 +7,5 @@ class User < ActiveRecord::Base
   mount_uploader :profile_pic, ImageUploader
   has_many :courses
   has_many :lectures
-
+  has_many :comments
 end

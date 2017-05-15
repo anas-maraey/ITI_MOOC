@@ -20,5 +20,22 @@
   <%= @lecture.user.name %>
 </p>
 
+
+<%= link_to like_lecture_path(@lecture), method: :put do %>
+    Upvote
+    <%= @lecture.get_upvotes.size %>
+<% end %>
+
+<%= link_to dislike_lecture_path(@lecture), method: :put do %>
+    Downvote
+    <%= @lecture.get_downvotes.size %>
+<% end %>
 <%= link_to 'Edit', edit_lecture_path(@lecture) %> |
 <%= link_to 'Back', lectures_path %>
+<div id="comments">
+  <h3> <%= @lecture.comments.count %> comments</h3>
+  <p> <%= render "comments/comment" %> </p>
+
+  <h3> Add Comment</h3>
+  <%= render "comments/form" %>
+</div>

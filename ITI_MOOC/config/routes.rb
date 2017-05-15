@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :lectures
+  resources :lectures do
+    resources :comments
+
+  end
   resources :courses
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
@@ -13,6 +16,14 @@ Rails.application.routes.draw do
 
     unauthenticated do
       root 'devise/sessions#new', as: :unauthenticated_root
+    end
+  end
+
+
+  resources :lectures do
+    member do
+      put "like", to: "lectures#upvote"
+      put "dislike", to: "lectures#downvote"
     end
   end
 

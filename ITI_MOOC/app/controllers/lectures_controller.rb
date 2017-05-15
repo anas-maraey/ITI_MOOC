@@ -10,6 +10,7 @@ class LecturesController < ApplicationController
   # GET /lectures/1
   # GET /lectures/1.json
   def show
+    @comments = Comment.where(lecture_id: @lecture)
   end
 
   # GET /lectures/new
@@ -60,6 +61,20 @@ class LecturesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  #Up Vote and Down Vote
+  def upvote
+    @lecture = Lecture.find(params[:id])
+    @lecture.upvote_by current_user
+    redirect_to :back
+  end
+
+  def downvote
+    @lecture = Lecture.find(params[:id])
+    @lecture.downvote_by current_user
+    redirect_to :back
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
