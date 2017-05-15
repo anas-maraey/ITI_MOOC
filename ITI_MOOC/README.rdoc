@@ -1,28 +1,12 @@
-== README
+# ITI_MOOC
+* [Ruby on Rails](http://rubyonrails.org/)  Project at   [ITI](http://iti.gov.eg/) - (9 Months Diploma in Open Source Applications Development)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+MOOC website similar to Coursera, user can create a course with multiple lectures, and other users can
+view this course and its lectures.
 
-Things you may want to cover:
+## Built With
+* [Ruby on Rails](http://guides.rubyonrails.org/v4.2/) - The web framework used
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Author
+* **Anas Ahmed**- [anas-marrey](https://github.com/anas-marrey)
